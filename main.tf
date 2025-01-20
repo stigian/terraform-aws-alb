@@ -2,7 +2,7 @@ data "aws_partition" "current" {}
 
 locals {
   create = var.create
-  tags   = merge(var.tags, { terraform-aws-modules = "alb" })
+  tags   = var.tags
 }
 
 ################################################################################
